@@ -1,5 +1,6 @@
-from main.app import db
 from datetime import datetime
+
+from main.app import db
 
 
 class Client(db.Model): # type: ignore[name-defined]

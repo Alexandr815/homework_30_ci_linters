@@ -1,7 +1,10 @@
-from flask import request, jsonify
-from .app import db
-from main.models import Client, Parking, ClientParking
 from datetime import datetime
+
+from flask import jsonify, request
+
+from main.models import Client, ClientParking, Parking
+
+from .app import db
 
 
 def register_routes(app):

@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
+import os
+
 db = SQLAlchemy()
 
 
@@ -15,7 +17,6 @@ def create_app(test_config=None):
 
     db.init_app(app)
 
-    from .models import Client, Parking, ClientParking
     from .routes import register_routes
 
     register_routes(app)

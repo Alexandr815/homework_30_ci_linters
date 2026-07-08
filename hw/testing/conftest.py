@@ -1,7 +1,8 @@
+
 import pytest
-from main.app import create_app, db as _db
-from main.models import Client, Parking, ClientParking
-from datetime import datetime
+from main.app import create_app
+from main.app import db as _db
+from main.models import Client, Parking
 
 
 @pytest.fixture
