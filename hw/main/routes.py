@@ -1,6 +1,6 @@
 from flask import request, jsonify
-from app import db
-from models import Client, Parking, ClientParking
+from .app import db
+from main.models import Client, Parking, ClientParking
 from datetime import datetime
 
 

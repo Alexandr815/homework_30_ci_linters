@@ -1,6 +1,6 @@
 import factory
-from ..main.models import Client, Parking
-from ..main.app import db
+from main.models import Client, Parking
+from main.app import db
 import random
 
 

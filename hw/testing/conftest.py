@@ -1,6 +1,6 @@
 import pytest
-from ..main.app import create_app, db as _db
-from ..main.models import Client, Parking, ClientParking
+from main.app import create_app, db as _db
+from main.models import Client, Parking, ClientParking
 from datetime import datetime
 
 
