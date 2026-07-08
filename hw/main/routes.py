@@ -48,9 +48,7 @@ def register_routes(app):
         parking.count_available_places -= 1
 
         cp = ClientParking(
-            client_id=client.id,
-            parking_id=parking.id,
-            time_in=datetime.utcnow()
+            client_id=client.id, parking_id=parking.id, time_in=datetime.utcnow()
         )
 
         db.session.add(cp)
@@ -63,8 +61,7 @@ def register_routes(app):
         data = request.json
 
         cp = ClientParking.query.filter_by(
-            client_id=data["client_id"],
-            parking_id=data["parking_id"]
+            client_id=data["client_id"], parking_id=data["parking_id"]
         ).first()
 
         client = Client.query.get(data["client_id"])
